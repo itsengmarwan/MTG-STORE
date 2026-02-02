@@ -1,191 +1,93 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
+<html lang="ar" dir="rtl">
+<head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marwan Store | متجر مروان</title>
     <link rel="stylesheet" href="./style.css" />
-    <title>MTG Store</title>
     <link rel="icon" href="picture/logo.jpg" />
-    <script
-      src="https://kit.fontawesome.com/106ba5d17b.js"
-      crossorigin="anonymous"
-    ></script>
-
-    <script async src="https://fundingchoicesmessages.google.com/i/pub-2654036089977891?ers=1" nonce="rLJxrzU-ooHCMPeF1dANeA"></script><script nonce="rLJxrzU-ooHCMPeF1dANeA">(function() {function signalGooglefcPresent() {if (!window.frames['googlefcPresent']) {if (document.body) {const iframe = document.createElement('iframe'); iframe.style = 'width: 0; height: 0; border: none; z-index: -1000; left: -1000px; top: -1000px;'; iframe.style.display = 'none'; iframe.name = 'googlefcPresent'; document.body.appendChild(iframe);} else {setTimeout(signalGooglefcPresent, 0);}}}signalGooglefcPresent();})();</script>
-    
-
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2654036089977891"
-     crossorigin="anonymous"></script>
-   
-  </head>
-  <body>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/106ba5d17b.js" crossorigin="anonymous"></script>
+</head>
+<body class="dark-theme">
     <header>
-      <a href="#" class="logo">Marwan Store</a>
-      <nav class="navigation">
-        <a href="#services">MY APPS </a>
-        <a href="#contact">Contact</a>
-      </nav>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Marwan<span>Store</span></a>
+            <nav class="navigation">
+                <button id="theme-toggle" class="theme-switch" title="تبديل الوضع">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </nav>
+        </div>
     </header>
 
-    <section class="main">
-      <div>
-        <h2>
-          Hello, I am Marwan and this is<br /><span>MTG Store</span>
-        </h2>
-        <h3>
-          This is my store where I will push my applications!
-        </h3>
-        <div class="social-icons">
-          <a href="https://github.com/9mtg6" target="_blank"
-            ><i class="fa-brands fa-github"></i
-          ></a>
-          <a href="https://discord.gg/NcV4CezA" target="_blank"
-            ><i class="fa-brands fa-discord"></i
-          ></a>
-          <a href="https://www.instagram.com/9mtg_6/" target="_blank"
-            ><i class="fa-brands fa-instagram"></i
-          ></a>
-          <a
-            href="https://youtube.com/channel/UCtYAVn_DS1r22x_1NXSE85A"
-            target="_blank"
-            ><i class="fa-brands fa-youtube"></i
-          ></a>
-        </div>
-      </div>
-    </section>
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content fade-in-up">
+                    <span class="badge">مرحباً بك في MTG Store</span>
+                    <h1>إبداع يتجاوز <br><span>الحدود الرقمية</span></h1>
+                    <p>استكشف وحمل أحدث أعمالي البرمجية.</p>
+                    <div class="hero-btns">
+                        <a href="#services" class="btn-primary">استعرض المتجر</a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <section class="cards" id="services">
-      <h2 class="title">MY APPS</h2>
-      <div class="content">
-        <div class="card">
-          <div class="project-image">
-            <img src="picture/logo.jpg" alt=".." />
-          </div>
-          <div class="info">
-            <h3>MTG Store</h3>
-            <h3>
-              <a href="index.html">Vist Link</a>
-            </h3>
-          </div>
-        </div>
-        <div class="card">
-          <div class="project-image">
-            <img src="picture/learncoding.png" alt=".." />
-          </div>
-          <div class="info">
-            <h3>Learn Coding</h3>
-            <h3>
-              <a target="_blank" href="https://free-learn-coding.netlify.app/"
-                >Vist Link</a
-              >
-            </h3>
-          </div>
-        </div>
+        <section class="apps-section" id="services">
+            <div class="container">
+                <div class="section-header scroll-reveal">
+                    <h2 class="title">التطبيقات</h2>
+                    <p>هنا ستجد جميع التطبيقات التي صممتها</p>
+                </div>
 
-        <div class="card">
-          <div class="project-image">
-            <img src="picture/Azkarwebsite.png" alt=".." />
-          </div>
-          <div class="info">
-            <h3>Azkar Website</h3>
-            <h3>
-              <a target="_blank" href="https://alazkar.netlify.app/"
-                >Vist Link</a
-              >
-            </h3>
-          </div>
-        </div>
+                    <div class="app-card scroll-reveal">
+                        <div class="app-img">
+                            <img src="picture/Bex ball.jpg" alt="Bex ball">
+                        </div>
+                        <div class="app-info">
+                            <h3>Bex Ball Game</h3>
+                            <p>لعبة أندرويد حماسية تعتمد على التوازن والسرعة.</p>
+                            <a href="Bexball.html" class="btn-link download">صفحة التحميل</a>
+                        </div>
+                    </div>
 
-        <div class="card">
-          <div class="project-image">
-            <img src="picture/Bex ball.jpg" alt=".." />
-          </div>
-          <div class="info">
-            <h3>Bex ball</h3>
-            <h3>
-              <a href="Bexball.html" 
-                >Download from here</a
-              >
-            </h3>
-          </div>
-        </div>
+                    <div class="app-card scroll-reveal">
+                        <div class="app-img">
+                            <img src="picture/clicker.jpg" alt="Clicker">
+                        </div>
+                        <div class="app-info">
+                            <h3>Clicker Game</h3>
+                            <p>تحدى سرعة استجابتك وحطم الأرقام القياسية.</p>
+                            <a href="clicker.html" class="btn-link download">صفحة التحميل</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <div class="card">
-          <div class="project-image">
-            <img src="picture/clicker.jpg" alt=".." />
-          </div>
-          <div class="info">
-            <h3>clicker</h3>
-            <h3>
-              <a href="clicker.html" 
-                >Download from here</a
-              >
-            </h3>
-          </div>
-        </div>
+        <section class="contact-section" id="contact">
+            <div class="container">
+                <div class="contact-box scroll-reveal">
+                    <div class="contact-text">
+                        <h2>هل لديك أي اعمال؟</h2>
+                        <p>لا تتردد في مراسلتي، سأكون سعيداً بتنفيذ فكرتك.</p>
+                    </div>
+                    <div class="contact-actions">
+                        <a href="message.html" class="btn-white">أرسل رسالة الآن <i class="fas fa-paper-plane"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
-        <div class="card">
-          <div class="project-image">
-            <img src="picture/azkar.jpg" alt=".." />
-          </div>
-          <div class="info">
-            <h3>Azkar</h3>
-            <h3>
-              <a href="Azkar.html"
-                >Download from here</a
-              >
-            </h3>
-          </div>
+    <footer>
+        <div class="container">
+            <p>صنع بكل حب بواسطة <span>Marwan Tarek</span> &copy; 2021</p>
         </div>
-      </div>
-    </section>
-
-    <section class="cards contact" id="contact">
-      <h2 class="title">Contact</h2>
-      <div class="content">
-        <div class="card">
-          <div class="icon">
-            <i class="fas fa-phone"></i>
-          </div>
-          <div class="info">
-            <h5>Phone 1</h5>
-            <p>+965 6687 7036</p>
-            <h5>Phone 2</h5>
-            <p>+20 1558816534</p>
-          </div>
-        </div>
-        <div class="card">
-          <div class="icon">
-            <i class="fas fa-envelope"></i>
-          </div>
-          <div class="info">
-            <h3>Email</h3>
-            <a href="./message.html">Click To Message</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <footer class="footer">
-      <p class="footer-title"><span>Marwan Tarek</span></p>
-      <div class="social-icon">
-        <a href="https://github.com/9mtg6" target="_blank"
-          ><i class="fa-brands fa-github"></i
-        ></a>
-        <a href="https://discord.gg/NcV4CezA" target="_blank"
-          ><i class="fa-brands fa-discord"></i
-        ></a>
-        <a href="https://www.instagram.com/9mtg_6/" target="_blank"
-          ><i class="fa-brands fa-instagram"></i
-        ></a>
-        <a
-          href="https://youtube.com/channel/UCtYAVn_DS1r22x_1NXSE85A"
-          target="_blank"
-          ><i class="fa-brands fa-youtube"></i
-        ></a>
-      </div>
     </footer>
+
     <script src="./script.js"></script>
-  </body>
+</body>
 </html>
