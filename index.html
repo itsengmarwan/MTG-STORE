@@ -1,108 +1,52 @@
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<!doctype html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="MTG Store — متجر مروان لتحميل التطبيقات والمشاريع البرمجية الشخصية.">
-    <title>Marwan Store | متجر مروان</title>
-    <link rel="stylesheet" href="./style.css" />
-    <link rel="icon" href="picture/logo.jpg" />
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/106ba5d17b.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="MTG Store — modern Android apps and lightweight games by Marwan Tarek." />
+  <title>MTG Store | Apps & Games</title>
+  <link rel="icon" href="picture/logo.jpg" />
+  <link rel="stylesheet" href="./style.css" />
+  <script src="https://kit.fontawesome.com/106ba5d17b.js" crossorigin="anonymous"></script>
 </head>
 <body class="dark-theme">
-    <header>
-        <div class="container nav-container">
-            <a href="index.html" class="logo">Marwan<span>Store</span></a>
-            <nav class="navigation">
-                <a href="#services">التطبيقات</a>
-                <a href="#contact">تواصل</a>
-                <button id="theme-toggle" class="theme-switch" type="button" title="تبديل الوضع" aria-label="تبديل الوضع" aria-pressed="false">
-                    <i class="fas fa-moon" aria-hidden="true"></i>
-                </button>
-            </nav>
+  <header>
+    <div class="container nav-container">
+      <a href="index.html" class="logo">MTG<span>Store</span></a>
+      <nav class="navigation" aria-label="Main navigation">
+        <a href="#apps">Apps</a>
+        <a href="#contact">Contact</a>
+        <button id="theme-toggle" class="theme-switch" type="button" title="Toggle theme" aria-label="Toggle theme" aria-pressed="false"><i class="fas fa-moon" aria-hidden="true"></i></button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content fade-in-up">
+          <span class="badge"><i class="fas fa-sparkles" aria-hidden="true"></i> Independent app studio</span>
+          <h1>Small apps.<br><span>Big ideas.</span></h1>
+          <p>Discover focused Android apps and playful experiments designed with care, clarity, and a smooth user experience.</p>
+          <div class="hero-btns"><a href="#apps" class="btn-primary">Explore the store <i class="fas fa-arrow-down" aria-hidden="true"></i></a><a href="https://github.com/itsengmarwan" class="btn-secondary" target="_blank" rel="noopener noreferrer">View GitHub <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i></a></div>
         </div>
-    </header>
+      </div>
+    </section>
 
-    <main>
-        <section class="hero">
-            <div class="container">
-                <div class="hero-content fade-in-up">
-                    <span class="badge">مرحباً بك في MTG Store</span>
-                    <h1>إبداع يتجاوز <br><span>الحدود الرقمية</span></h1>
-                    <p>استكشف وحمّل تطبيقات وألعابًا خفيفة صممتها بعناية لتعمل بسلاسة على أجهزتك.</p>
-                    <div class="hero-btns">
-                        <a href="#services" class="btn-primary">استعرض المتجر</a>
-                        <a href="https://github.com/itsengmarwan" class="btn-secondary" target="_blank" rel="noopener noreferrer">شاهد مشاريعي <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="apps-section" id="services">
-            <div class="container">
-                <div class="section-header scroll-reveal">
-                    <h2 class="title">التطبيقات</h2>
-                    <p>اختر تطبيقًا لمعرفة التفاصيل أو تنزيل النسخة المناسبة.</p>
-                </div>
-
-                <div class="apps-grid">
-                    <div class="app-card scroll-reveal">
-                        <div class="app-img">
-                            <img src="picture/Bex ball.jpg" alt="لقطة من لعبة Bex Ball" loading="lazy" decoding="async">
-                        </div>
-                        <div class="app-info">
-                            <h3>Bex Ball Game</h3>
-                            <p>لعبة أندرويد حماسية تعتمد على التوازن والسرعة.</p>
-                            <a href="Bexball.html" class="btn-link download">صفحة التحميل</a>
-                        </div>
-                    </div>
-
-                    <div class="app-card scroll-reveal">
-                        <div class="app-img">
-                            <img src="picture/clicker.jpg" alt="لقطة من لعبة Clicker" loading="lazy" decoding="async">
-                        </div>
-                        <div class="app-info">
-                            <h3>Clicker Game</h3>
-                            <p>تحدى سرعة استجابتك وحطم الأرقام القياسية.</p>
-                            <a href="clicker.html" class="btn-link download">صفحة التحميل</a>
-                        </div>
-                    </div>
-                    <div class="app-card scroll-reveal">
-                        <div class="app-img">
-                            <img src="picture/logo.jpg" alt="شعار تطبيق أذكار" loading="lazy" decoding="async">
-                        </div>
-                        <div class="app-info">
-                            <h3>Azkar</h3>
-                            <p>تطبيق يومي للأذكار والتسابيح مع تجربة بسيطة وسريعة.</p>
-                            <a href="apps/azkar.apk" class="btn-link download" download>تنزيل التطبيق <i class="fas fa-download" aria-hidden="true"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="contact-section" id="contact">
-            <div class="container">
-                <div class="contact-box scroll-reveal">
-                    <div class="contact-text">
-                        <h2>هل لديك أي اعمال؟</h2>
-                        <p>لا تتردد في مراسلتي، سأكون سعيداً بتنفيذ فكرتك.</p>
-                    </div>
-                    <div class="contact-actions">
-                        <a href="message.html" class="btn-white">أرسل رسالة الآن <i class="fas fa-paper-plane"></i></a>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="container">
-            <p>صنع بواسطة <span>Marwan Tarek</span> &copy; <span id="current-year">2026</span></p>
+    <section class="apps-section" id="apps">
+      <div class="container">
+        <div class="section-header scroll-reveal"><span class="eyebrow">The collection</span><h2 class="title">Built for everyday use</h2><p>Choose an app to learn more, see the latest details, or download the available Android build.</p></div>
+        <div class="apps-grid">
+          <article class="app-card scroll-reveal"><div class="app-img"><img src="picture/Bex ball.jpg" alt="Bex Ball game icon" loading="lazy" decoding="async"><span class="app-platform"><i class="fab fa-android" aria-hidden="true"></i> Android game</span></div><div class="app-info"><span class="app-kicker">Arcade / v1.0</span><h3>Bex Ball</h3><p>Balance, react, and keep the ball moving through a fast, focused arcade challenge.</p><a href="Bexball.html" class="btn-link">View app details <i class="fas fa-arrow-right" aria-hidden="true"></i></a></div></article>
+          <article class="app-card scroll-reveal"><div class="app-img"><img src="picture/clicker.jpg" alt="Clicker game icon" loading="lazy" decoding="async"><span class="app-platform"><i class="fab fa-android" aria-hidden="true"></i> Android game</span></div><div class="app-info"><span class="app-kicker">Casual / v1.0</span><h3>Clicker</h3><p>Test your speed and focus in a simple, satisfying challenge built for quick sessions.</p><a href="clicker.html" class="btn-link">View app details <i class="fas fa-arrow-right" aria-hidden="true"></i></a></div></article>
+          <article class="app-card scroll-reveal"><div class="app-img"><img src="picture/logo.jpg" alt="Azkar app icon" loading="lazy" decoding="async"><span class="app-platform"><i class="fab fa-android" aria-hidden="true"></i> Android app</span></div><div class="app-info"><span class="app-kicker">Wellness / v1.0</span><h3>Azkar</h3><p>A calm daily companion for remembrance, tasbih, and a focused spiritual routine.</p><a href="apps/azkar.apk" class="btn-link" download>Download APK <i class="fas fa-download" aria-hidden="true"></i></a></div></article>
         </div>
-    </footer>
+      </div>
+    </section>
 
-    <script src="./script.js"></script>
+    <section class="contact-section" id="contact"><div class="container"><div class="contact-box scroll-reveal"><div><span class="eyebrow">Have an idea?</span><h2>Let’s build something useful.</h2><p>Send a message and share what you would like to create next.</p></div><a href="message.html" class="btn-white">Start a conversation <i class="fas fa-paper-plane" aria-hidden="true"></i></a></div></div></section>
+  </main>
+  <footer><div class="container"><p>Made by <span>Marwan Tarek</span> &copy; <span id="current-year">2026</span></p></div></footer>
+  <script src="./script.js"></script>
 </body>
 </html>

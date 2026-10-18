@@ -1,4 +1,4 @@
-// نظام التبديل بين الأوضاع
+// Theme switching
 const themeToggle = document.getElementById('theme-toggle');
 const body = document.body;
 const icon = themeToggle?.querySelector('i');
@@ -23,7 +23,7 @@ themeToggle?.addEventListener('click', () => {
     localStorage.setItem('theme', theme);
 });
 
-// نظام ظهور العناصر عند السكرول (Scroll Reveal)
+// Scroll reveal animations
 const revealElements = document.querySelectorAll('.scroll-reveal');
 
 if ('IntersectionObserver' in window) {
