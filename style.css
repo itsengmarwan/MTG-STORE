@@ -26,6 +26,7 @@ body {
     color: var(--text-body);
     overflow-x: hidden;
     transition: background 0.4s ease;
+    line-height: 1.7;
 }
 
 .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
@@ -58,6 +59,9 @@ header {
     transition: 0.3s;
 }
 
+.navigation { display: flex; align-items: center; gap: 18px; }
+.navigation a { margin-right: 0; }
+
 .navigation a:hover { color: var(--primary); }
 
 .theme-switch {
@@ -84,6 +88,12 @@ header {
     box-shadow: 0 10px 25px rgba(37, 99, 235, 0.3); transition: 0.3s;
 }
 
+.btn-secondary {
+    color: var(--text-head); border: 1px solid var(--border); padding: 14px 24px;
+    border-radius: 14px; text-decoration: none; font-weight: 700; transition: .3s;
+}
+.btn-secondary:hover { border-color: var(--primary); color: var(--primary); transform: translateY(-2px); }
+
 .btn-primary:hover { transform: scale(1.05); background: var(--primary-light); }
 
 /* Apps Grid */
@@ -104,6 +114,7 @@ header {
 
 .app-img img { width: 100%; border-radius: 18px; margin-bottom: 20px; filter: grayscale(20%); transition: 0.4s; }
 .app-card:hover .app-img img { filter: grayscale(0); }
+.app-img { overflow: hidden; border-radius: 18px; }
 
 .app-info h3 { color: var(--text-head); margin-bottom: 12px; }
 
@@ -115,6 +126,7 @@ header {
 }
 
 .btn-link:hover { background: var(--primary); border-color: var(--primary); color: white; }
+.btn-link { display: flex; align-items: center; justify-content: center; gap: 8px; }
 
 /* Contact Box */
 .contact-box {
@@ -137,6 +149,15 @@ footer span { color: var(--primary); font-weight: 800; }
 .scroll-reveal.active { opacity: 1; transform: translateY(0); }
 
 @media (max-width: 768px) {
+    .navigation a { display: none; }
     .hero h1 { font-size: 2.2rem; }
-    .contact-box { flex-direction: column; text-align: center; gap: 30px; }
+    .hero-btns { flex-direction: column; }
+    .btn-primary, .btn-secondary { width: min(100%, 280px); }
+    .contact-box { flex-direction: column; text-align: center; gap: 30px; padding: 35px 24px; }
 }
+
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; scroll-behavior: auto !important; }
+}
+
+:focus-visible { outline: 3px solid var(--primary-light); outline-offset: 4px; }

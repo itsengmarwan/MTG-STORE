@@ -14,6 +14,9 @@ const setThemeState = (theme) => {
 
 setThemeState(localStorage.getItem('theme') === 'light' ? 'light' : 'dark');
 
+const year = document.getElementById('current-year');
+if (year) year.textContent = new Date().getFullYear();
+
 themeToggle?.addEventListener('click', () => {
     const theme = body.classList.contains('dark-theme') ? 'light' : 'dark';
     setThemeState(theme);

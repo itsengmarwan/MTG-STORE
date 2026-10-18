@@ -15,8 +15,10 @@
         <div class="container nav-container">
             <a href="index.html" class="logo">Marwan<span>Store</span></a>
             <nav class="navigation">
+                <a href="#services">التطبيقات</a>
+                <a href="#contact">تواصل</a>
                 <button id="theme-toggle" class="theme-switch" type="button" title="تبديل الوضع" aria-label="تبديل الوضع" aria-pressed="false">
-                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-moon" aria-hidden="true"></i>
                 </button>
             </nav>
         </div>
@@ -28,9 +30,10 @@
                 <div class="hero-content fade-in-up">
                     <span class="badge">مرحباً بك في MTG Store</span>
                     <h1>إبداع يتجاوز <br><span>الحدود الرقمية</span></h1>
-                    <p>استكشف وحمل أحدث أعمالي البرمجية.</p>
+                    <p>استكشف وحمّل تطبيقات وألعابًا خفيفة صممتها بعناية لتعمل بسلاسة على أجهزتك.</p>
                     <div class="hero-btns">
                         <a href="#services" class="btn-primary">استعرض المتجر</a>
+                        <a href="https://github.com/itsengmarwan" class="btn-secondary" target="_blank" rel="noopener noreferrer">شاهد مشاريعي <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
                     </div>
                 </div>
             </div>
@@ -40,12 +43,13 @@
             <div class="container">
                 <div class="section-header scroll-reveal">
                     <h2 class="title">التطبيقات</h2>
-                    <p>هنا ستجد جميع التطبيقات التي صممتها</p>
+                    <p>اختر تطبيقًا لمعرفة التفاصيل أو تنزيل النسخة المناسبة.</p>
                 </div>
 
+                <div class="apps-grid">
                     <div class="app-card scroll-reveal">
                         <div class="app-img">
-                            <img src="picture/Bex ball.jpg" alt="Bex ball">
+                            <img src="picture/Bex ball.jpg" alt="لقطة من لعبة Bex Ball" loading="lazy" decoding="async">
                         </div>
                         <div class="app-info">
                             <h3>Bex Ball Game</h3>
@@ -56,12 +60,22 @@
 
                     <div class="app-card scroll-reveal">
                         <div class="app-img">
-                            <img src="picture/clicker.jpg" alt="Clicker">
+                            <img src="picture/clicker.jpg" alt="لقطة من لعبة Clicker" loading="lazy" decoding="async">
                         </div>
                         <div class="app-info">
                             <h3>Clicker Game</h3>
                             <p>تحدى سرعة استجابتك وحطم الأرقام القياسية.</p>
                             <a href="clicker.html" class="btn-link download">صفحة التحميل</a>
+                        </div>
+                    </div>
+                    <div class="app-card scroll-reveal">
+                        <div class="app-img">
+                            <img src="picture/logo.jpg" alt="شعار تطبيق أذكار" loading="lazy" decoding="async">
+                        </div>
+                        <div class="app-info">
+                            <h3>Azkar</h3>
+                            <p>تطبيق يومي للأذكار والتسابيح مع تجربة بسيطة وسريعة.</p>
+                            <a href="apps/azkar.apk" class="btn-link download" download>تنزيل التطبيق <i class="fas fa-download" aria-hidden="true"></i></a>
                         </div>
                     </div>
                 </div>
@@ -85,7 +99,7 @@
 
     <footer>
         <div class="container">
-            <p>صنع بواسطة <span>Marwan Tarek</span> &copy; 2021</p>
+            <p>صنع بواسطة <span>Marwan Tarek</span> &copy; <span id="current-year">2026</span></p>
         </div>
     </footer>
 
