@@ -12,7 +12,14 @@ const setThemeState = (theme) => {
     themeToggle?.setAttribute('aria-pressed', String(isLight));
 };
 
-setThemeState(localStorage.getItem('theme') === 'light' ? 'light' : 'dark');
+let savedTheme = null;
+try {
+    savedTheme = localStorage.getItem('theme');
+} catch (error) {
+    console.warn('Theme preference could not be loaded.', error);
+}
+
+setThemeState(savedTheme === 'light' ? 'light' : 'dark');
 
 const year = document.getElementById('current-year');
 if (year) year.textContent = new Date().getFullYear();
@@ -20,7 +27,11 @@ if (year) year.textContent = new Date().getFullYear();
 themeToggle?.addEventListener('click', () => {
     const theme = body.classList.contains('dark-theme') ? 'light' : 'dark';
     setThemeState(theme);
-    localStorage.setItem('theme', theme);
+    try {
+        localStorage.setItem('theme', theme);
+    } catch (error) {
+        console.warn('Theme preference could not be saved.', error);
+    }
 });
 
 // Scroll reveal animations
