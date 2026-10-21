@@ -6,6 +6,8 @@
   <meta name="description" content="MTG Store — modern Android apps and lightweight games by Marwan Tarek." />
   <title>MTG Store | Apps & Games</title>
   <link rel="icon" href="picture/logo.jpg" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <meta name="theme-color" content="#315edc" />
   <link rel="stylesheet" href="./style.css" />
   <script src="https://kit.fontawesome.com/106ba5d17b.js" crossorigin="anonymous"></script>
 </head>
@@ -14,8 +16,9 @@
     <div class="container nav-container">
       <a href="index.html" class="logo">MTG<span>Store</span></a>
       <nav class="navigation" aria-label="Main navigation">
-        <a href="#apps">Apps</a>
-        <a href="#contact">Contact</a>
+        <a href="#apps" data-i18n="navApps">Apps</a>
+        <a href="#contact" data-i18n="navContact">Contact</a>
+        <button id="language-toggle" class="language-switch" type="button" aria-label="Switch language">عربي</button>
         <button id="theme-toggle" class="theme-switch" type="button" title="Toggle theme" aria-label="Toggle theme" aria-pressed="false"><i class="fas fa-moon" aria-hidden="true"></i></button>
       </nav>
     </div>
@@ -27,24 +30,27 @@
         <div class="hero-content fade-in-up">
           <span class="badge"><i class="fas fa-sparkles" aria-hidden="true"></i> Independent app studio</span>
           <h1>Small apps.<br><span>Big ideas.</span></h1>
-          <p>Discover focused Android apps and playful experiments designed with care, clarity, and a smooth user experience.</p>
-          <div class="hero-btns"><a href="#apps" class="btn-primary">Explore the store <i class="fas fa-arrow-down" aria-hidden="true"></i></a><a href="https://github.com/itsengmarwan" class="btn-secondary" target="_blank" rel="noopener noreferrer">View GitHub <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i></a></div>
+          <p data-i18n="heroText">Discover focused Android apps and playful experiments designed with care, clarity, and a smooth user experience.</p>
+          <div class="hero-btns"><a href="#apps" class="btn-primary" data-i18n="explore">Explore the store <i class="fas fa-arrow-down" aria-hidden="true"></i></a><a href="https://github.com/itsengmarwan/MTG-STORE" class="btn-secondary" target="_blank" rel="noopener noreferrer">View GitHub <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i></a></div>
         </div>
       </div>
     </section>
 
     <section class="apps-section" id="apps">
       <div class="container">
+        <div class="store-stats scroll-reveal"><div><strong>3</strong><span>Available apps</span></div><div><strong>100%</strong><span>Free downloads</span></div><div><strong>Android</strong><span>Built for mobile</span></div></div>
         <div class="section-header scroll-reveal"><span class="eyebrow">The collection</span><h2 class="title">Built for everyday use</h2><p>Choose an app to learn more, see the latest details, or download the available Android build.</p></div>
+        <div class="store-toolbar scroll-reveal"><label class="search-box"><i class="fas fa-search" aria-hidden="true"></i><input id="app-search" type="search" placeholder="Search apps..." aria-label="Search apps"></label><div class="filter-group" role="group" aria-label="Filter apps"><button class="filter-btn is-active" data-filter="all">All</button><button class="filter-btn" data-filter="game">Games</button><button class="filter-btn" data-filter="app">Apps</button></div></div>
         <div class="apps-grid">
-          <article class="app-card scroll-reveal"><div class="app-img"><img src="picture/Bex ball.jpg" alt="Bex Ball game icon" loading="lazy" decoding="async"><span class="app-platform"><i class="fab fa-android" aria-hidden="true"></i> Android game</span></div><div class="app-info"><span class="app-kicker">Arcade / v1.0</span><h3>Bex Ball</h3><p>Balance, react, and keep the ball moving through a fast, focused arcade challenge.</p><a href="Bexball.html" class="btn-link">View app details <i class="fas fa-arrow-right" aria-hidden="true"></i></a></div></article>
-          <article class="app-card scroll-reveal"><div class="app-img"><img src="picture/clicker.jpg" alt="Clicker game icon" loading="lazy" decoding="async"><span class="app-platform"><i class="fab fa-android" aria-hidden="true"></i> Android game</span></div><div class="app-info"><span class="app-kicker">Casual / v1.0</span><h3>Clicker</h3><p>Test your speed and focus in a simple, satisfying challenge built for quick sessions.</p><a href="clicker.html" class="btn-link">View app details <i class="fas fa-arrow-right" aria-hidden="true"></i></a></div></article>
-          <article class="app-card scroll-reveal"><div class="app-img"><img src="picture/azkar-logo.jpg" alt="Azkar app icon" loading="lazy" decoding="async"><span class="app-platform"><i class="fab fa-android" aria-hidden="true"></i> Android app</span></div><div class="app-info"><span class="app-kicker">Wellness / v1.0</span><h3>Azkar</h3><p>A calm daily companion for remembrance, tasbih, and a focused spiritual routine.</p><a href="azkar.html" class="btn-link">View app details <i class="fas fa-arrow-right" aria-hidden="true"></i></a></div></article>
+          <article class="app-card scroll-reveal" data-type="game" data-name="Bex Ball"><div class="app-img"><img src="picture/Bex ball.jpg" alt="Bex Ball game icon" loading="lazy" decoding="async"><span class="app-platform"><i class="fab fa-android" aria-hidden="true"></i> Android game</span></div><div class="app-info"><span class="app-kicker">Arcade / v1.0</span><h3>Bex Ball</h3><p>Balance, react, and keep the ball moving through a fast, focused arcade challenge.</p><a href="Bexball.html" class="btn-link">View app details <i class="fas fa-arrow-right" aria-hidden="true"></i></a></div></article>
+          <article class="app-card scroll-reveal" data-type="game" data-name="Clicker"><div class="app-img"><img src="picture/clicker.jpg" alt="Clicker game icon" loading="lazy" decoding="async"><span class="app-platform"><i class="fab fa-android" aria-hidden="true"></i> Android game</span></div><div class="app-info"><span class="app-kicker">Casual / v1.0</span><h3>Clicker</h3><p>Test your speed and focus in a simple, satisfying challenge built for quick sessions.</p><a href="clicker.html" class="btn-link">View app details <i class="fas fa-arrow-right" aria-hidden="true"></i></a></div></article>
+          <article class="app-card scroll-reveal" data-type="app" data-name="Azkar"><div class="app-img"><img src="picture/azkar-logo.jpg" alt="Azkar app icon" loading="lazy" decoding="async"><span class="app-platform"><i class="fab fa-android" aria-hidden="true"></i> Android app</span></div><div class="app-info"><span class="app-kicker">Wellness / v1.0</span><h3>Azkar</h3><p>A calm daily companion for remembrance, tasbih, and a focused spiritual routine.</p><a href="azkar.html" class="btn-link">View app details <i class="fas fa-arrow-right" aria-hidden="true"></i></a></div></article>
         </div>
+        <p id="empty-state" class="empty-state" hidden>No apps match your search.</p>
       </div>
     </section>
 
-    <section class="contact-section" id="contact"><div class="container"><div class="contact-box scroll-reveal"><div><span class="eyebrow">Have an idea?</span><h2>Let’s build something useful.</h2><p>Send a message and share what you would like to create next.</p></div><a href="message.html" class="btn-white">Start a conversation <i class="fas fa-paper-plane" aria-hidden="true"></i></a></div></div></section>
+    <section class="contact-section" id="contact"><div class="container"><div class="contact-box scroll-reveal"><div><span class="eyebrow">Have an idea?</span><h2>Suggest the next useful app.</h2><p>Tell us what you would like to see in the collection.</p></div><a href="message.html" class="btn-white">Suggest an app <i class="fas fa-paper-plane" aria-hidden="true"></i></a></div></div></section>
   </main>
   <footer><div class="container"><p>Made by <span>Marwan Tarek</span> &copy; <span id="current-year">2021</span></p></div></footer>
   <script src="./script.js"></script>

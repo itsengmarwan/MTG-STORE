@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://itsengmarwan.github.io/MTG-STORE/sitemap.xml

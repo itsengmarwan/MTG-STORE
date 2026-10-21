@@ -1,0 +1,9 @@
+{
+  "name": "MTG Store | Apps & Games",
+  "short_name": "MTG Store",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#070b16",
+  "theme_color": "#315edc",
+  "icons": [{ "src": "picture/logo.jpg", "sizes": "192x192", "type": "image/jpeg" }]
+}
